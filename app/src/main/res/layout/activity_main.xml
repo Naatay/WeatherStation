@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.pogoda.MainActivity">
+
+    <ImageView
+        android:id="@+id/android_cookie_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scaleType="centerCrop"
+        android:src="@drawable/snieg" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="#3F000000">
+
+            <ImageView
+                android:layout_marginLeft="16dp"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/slonce"
+                android:id="@+id/ikona"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="27 C"
+                android:id="@+id/temperatura"
+                android:textSize="48dp"
+                android:textColor="@android:color/white"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#3F000000"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:textSize="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="CIŚNIENIE"
+                android:layout_marginTop="18dp" />
+            <TextView
+                android:textSize="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:id="@+id/cisnienie"
+                android:text="1000"
+                android:layout_marginTop="8dp" />
+            <TextView
+                android:textSize="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="WILGOTNOŚĆ"
+                android:layout_marginTop="18dp" />
+            <TextView
+                android:textSize="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:id="@+id/wilgotnosc"
+                android:text="100"
+                android:layout_marginTop="8dp" />
+            <TextView
+                android:textSize="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="NATEŻENIE ŚWIATŁA"
+                android:layout_marginTop="18dp" />
+            <TextView
+                android:textSize="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:id="@+id/natezenieSwiatla"
+                android:text="3000"
+                android:layout_weight="1"
+                android:layout_marginTop="8dp" />
+
+
+            <Button
+                android:textSize="36dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ODŚWIEŻ"
+                android:id="@+id/button"
+                android:layout_marginLeft="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginRight="4dp"
+                android:textColor="@android:color/white"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
